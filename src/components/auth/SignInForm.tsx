@@ -19,7 +19,7 @@ export default function SignInForm() {
     setIsLoading(true)
 
     try {
-      const res = await axios.post("https://f-backend-l4sd.vercel.app/api/login", { email, password })
+      const res = await axios.post("https://back-end-f.vercel.app/api/login", { email, password })
 
       localStorage.setItem("token", res.data.token)
       router.push("/") // Redirect to Home page
