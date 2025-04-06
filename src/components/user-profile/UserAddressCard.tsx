@@ -52,7 +52,7 @@ export default function UserAddressCard() {
   async function fetchUser() {
     try {
       setLoading(true)
-      const response = await fetch("https://f-backend-l4sd.vercel.app/api/users")
+      const response = await fetch("https://back-end-f.vercel.app/api/users")
       const data = await response.json()
       //setUser(data);
 
