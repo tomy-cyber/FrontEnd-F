@@ -13,7 +13,7 @@ export const EcommerceMetrics = () => {
     setIsLoading(true)
     const token = localStorage.getItem("token") // Or get it from context/cookie
   
-    fetch("https://f-backend-l4sd.vercel.app/api/numbers", {
+    fetch("https://back-end-f.vercel.app/api/numbers", {
       headers: {
         Authorization: `Bearer ${token}`
       },
