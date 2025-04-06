@@ -1,7 +1,7 @@
 // Utility function for API requests
 export async function apiRequest(endpoint: string, method: string, data?: any) {
     try {
-      const response = await fetch(`https://f-backend-l4sd.vercel.app/api/${endpoint}`, {
+      const response = await fetch(`https://back-end-f.vercel.app/api/${endpoint}`, {
         method,
         headers: {
           "Content-Type": "application/json",
