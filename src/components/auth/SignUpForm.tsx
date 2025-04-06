@@ -30,7 +30,7 @@ export default function SignUpForm() {
     try {
       console.log("Submitting registration data:", formData)
 
-      const res = await fetch("https://f-backend-l4sd.vercel.app/api/register", {
+      const res = await fetch("https://back-end-f.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
