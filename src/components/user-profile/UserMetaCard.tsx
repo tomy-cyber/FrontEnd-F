@@ -49,10 +49,10 @@ export default function UserMetaCard() {
     email: "",
     phone: "",
     bio: "",
-    facebook: "https://www.facebook.com/PimjoHQ",
+    facebook: "https://www.facebook.com",
     twitter: "https://x.com/PimjoHQ",
-    linkedin: "https://www.linkedin.com/company/pimjo",
-    instagram: "https://instagram.com/PimjoHQ",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://instagram.com",
     location: "Arizona, United States",
   })
 
@@ -64,7 +64,7 @@ export default function UserMetaCard() {
   async function fetchUser() {
     try {
       setLoading(true)
-      const response = await fetch("https://f-backend-l4sd.vercel.app/api/users")
+      const response = await fetch("https://back-end-f.vercel.app/api/users")
       const data = await response.json()
       // Initialize form data
       if (data) {
