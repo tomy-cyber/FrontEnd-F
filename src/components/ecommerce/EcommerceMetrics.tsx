@@ -1,28 +1,154 @@
 
-"use client"
+// "use client"
 
+// import { useEffect, useState } from "react"
+// import { ArrowDownIcon, ArrowUpIcon, BoxIconLine, GroupIcon } from "@/icons"
+
+// export const EcommerceMetrics = () => {
+//   const [usdValue, setUsdValue] = useState("0,00")
+//   const [btcValue, setBtcValue] = useState("0,00")
+//   const [isLoading, setIsLoading] = useState(true)
+
+//   useEffect(() => {
+//     setIsLoading(true)
+//     const token = localStorage.getItem("token") // Or get it from context/cookie
+  
+//     fetch("https://back-end-f.vercel.app/api/numbers", {
+//       headers: {
+//         Authorization: `Bearer ${token}`
+//       },
+//       credentials: 'include',
+//     })
+//       .then((res) => res.json())
+//       .then((data) => {
+//         setUsdValue(data.usd || "0,00")
+//         setBtcValue(data.btc || "0,00")
+//         setIsLoading(false)
+//       })
+//       .catch((err) => {
+//         console.error("Error fetching numbers:", err)
+//         setIsLoading(false)
+//       })
+//   }, [])
+//   interface BadgeProps {
+//     color: "success" | "error"; // Add other colors as needed
+//     className?: string; // Allow className to be passed as a prop
+//     children: React.ReactNode; // Define the children prop explicitly
+//   }
+  
+//   const Badge: React.FC<BadgeProps> = ({ color, className, children }) => {
+//     return (
+//       <div className={`badge ${color} ${className}`}>
+//         {children}
+//       </div>
+//     );
+//   };
+  
+  
+//   return (
+//     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
+//       {/* USD Metric Card */}
+//       <div className="relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-gray-800 p-5 shadow-lg transition-all duration-300 hover:shadow-emerald-900/20 dark:border-gray-700 dark:from-gray-900 dark:to-gray-800 md:p-6">
+//         <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-emerald-500/10 blur-2xl filter"></div>
+//         <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-emerald-500/10 blur-2xl filter"></div>
+
+//         <div className="flex items-center space-x-4">
+//           <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald-900/30 backdrop-blur-sm">
+//             <GroupIcon className="size-7 text-emerald-400" />
+//           </div>
+//           <div>
+//             <h3 className="text-lg font-semibold text-emerald-400">USD</h3>
+//             <p className="text-xs text-gray-400">United States Dollar</p>
+//           </div>
+//         </div>
+
+//         <div className="mt-6 flex items-end justify-between">
+//           <div>
+//             <h4
+//               className={`text-2xl font-bold text-white transition-opacity duration-300 ${isLoading ? "opacity-50" : "opacity-100"}`}
+//             >
+//               ${usdValue}
+//             </h4>
+//             <div className="mt-1 h-1 w-16 overflow-hidden rounded-full bg-gray-700">
+//               <div className="h-full w-3/4 rounded-full bg-emerald-500"></div>
+//             </div>
+//           </div>
+//           <Badge color="success" className="flex items-center space-x-1 rounded-lg px-3 py-1.5 text-sm font-medium">
+//             <ArrowUpIcon className="mr-1" />
+//             11.01%
+//           </Badge>
+//         </div>
+
+//         <div className="mt-4 flex justify-between text-xs text-gray-500">
+//           <span>24h change</span>
+//           <span className="text-emerald-400">+$1,240.55</span>
+//         </div>
+//       </div>
+
+//       {/* BTC Metric Card */}
+//       <div className="relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-gray-800 p-5 shadow-lg transition-all duration-300 hover:shadow-amber-900/20 dark:border-gray-700 dark:from-gray-900 dark:to-gray-800 md:p-6">
+//         <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-amber-500/10 blur-2xl filter"></div>
+//         <div className="absolute -bottom-6 -left-6 h-24 w-24 rounded-full bg-amber-500/10 blur-2xl filter"></div>
+
+//         <div className="flex items-center space-x-4">
+//           <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-amber-900/30 backdrop-blur-sm">
+//             <BoxIconLine className="size-7 text-amber-400" />
+//           </div>
+//           <div>
+//             <h3 className="text-lg font-semibold text-amber-400">BTC</h3>
+//             <p className="text-xs text-gray-400">Bitcoin</p>
+//           </div>
+//         </div>
+
+//         <div className="mt-6 flex items-end justify-between">
+//           <div>
+//             <h4
+//               className={`text-2xl font-bold text-white transition-opacity duration-300 ${isLoading ? "opacity-50" : "opacity-100"}`}
+//             >
+//               {btcValue} BTC
+//             </h4>
+//             <div className="mt-1 h-1 w-16 overflow-hidden rounded-full bg-gray-700">
+//               <div className="h-full w-1/4 rounded-full bg-red-500"></div>
+//             </div>
+//           </div>
+//           <Badge color="error" className="flex items-center space-x-1 rounded-lg px-3 py-1.5 text-sm font-medium">
+//             <ArrowDownIcon className="mr-1 text-error-500" />
+//             9.05%
+//           </Badge>
+//         </div>
+
+//         <div className="mt-4 flex justify-between text-xs text-gray-500">
+//           <span>24h change</span>
+//           <span className="text-red-400">-0.00325 BTC</span>
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
+"use client"
 import { useEffect, useState } from "react"
 import { ArrowDownIcon, ArrowUpIcon, BoxIconLine, GroupIcon } from "@/icons"
 
 export const EcommerceMetrics = () => {
-  const [usdValue, setUsdValue] = useState("0,00")
-  const [btcValue, setBtcValue] = useState("0,00")
+  const [usdValue, setUsdValue] = useState("0.00")
+  const [btcValue, setBtcValue] = useState("0.00")
+  const [exchangeRate, setExchangeRate] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
 
+  // Fetch BTC amount from your backend (ignore USD)
   useEffect(() => {
     setIsLoading(true)
-    const token = localStorage.getItem("token") // Or get it from context/cookie
-  
+    const token = localStorage.getItem("token")
+
     fetch("https://back-end-f.vercel.app/api/numbers", {
       headers: {
-        Authorization: `Bearer ${token}`
+        Authorization: `Bearer ${token}`,
       },
-      credentials: 'include',
+      credentials: "include",
     })
       .then((res) => res.json())
       .then((data) => {
-        setUsdValue(data.usd || "0,00")
-        setBtcValue(data.btc || "0,00")
+        setBtcValue(data.btc || "0.00") // Only update BTC, ignore USD value
         setIsLoading(false)
       })
       .catch((err) => {
@@ -30,21 +156,42 @@ export const EcommerceMetrics = () => {
         setIsLoading(false)
       })
   }, [])
+
+  // Fetch live BTC to USD exchange rate in real time
+  useEffect(() => {
+    fetch("https://back-end-f.vercel.app/api/btc-price")
+      .then((res) => res.json())
+      .then((data) => {
+        // Assuming the API response gives the exchange rate in a "rate" field
+        const rate = data.rate || 0
+        setExchangeRate(rate)
+      })
+      .catch((err) => console.error("Error fetching BTC rate:", err))
+  }, [])
+
+  // Convert BTC to USD when BTC or exchangeRate changes
+  useEffect(() => {
+    if (!exchangeRate || !btcValue) return
+  
+    // Ensure btcValue is treated as a string and remove any commas
+    const btc = parseFloat(btcValue.toString().replace(",", "")) || 0
+    const usd = (btc * exchangeRate).toFixed(2)
+    setUsdValue(usd)
+  }, [btcValue, exchangeRate])
+  
+
   interface BadgeProps {
-    color: "success" | "error"; // Add other colors as needed
-    className?: string; // Allow className to be passed as a prop
-    children: React.ReactNode; // Define the children prop explicitly
+    color: "success" | "error"
+    className?: string
+    children: React.ReactNode
   }
-  
-  const Badge: React.FC<BadgeProps> = ({ color, className, children }) => {
-    return (
-      <div className={`badge ${color} ${className}`}>
-        {children}
-      </div>
-    );
-  };
-  
-  
+
+  const Badge: React.FC<BadgeProps> = ({ color, className, children }) => (
+    <div className={`badge ${color} ${className}`}>
+      {children}
+    </div>
+  )
+
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8">
       {/* USD Metric Card */}
@@ -81,7 +228,7 @@ export const EcommerceMetrics = () => {
 
         <div className="mt-4 flex justify-between text-xs text-gray-500">
           <span>24h change</span>
-          <span className="text-emerald-400">+$1,240.55</span>
+          <span className="text-emerald-400">+${(parseFloat(usdValue) * 0.1101).toFixed(2)}</span>
         </div>
       </div>
 
