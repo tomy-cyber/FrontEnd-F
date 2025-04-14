@@ -728,7 +728,7 @@ export default function UserDropdown() {
           return // No token, no user
         }
 
-        let response = await fetch("http://localhost:3001/api/users/me", {
+        let response = await fetch("https://back-end-f.vercel.app/api/users/me", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -931,4 +931,3 @@ export default function UserDropdown() {
     </div>
   )
 }
-
