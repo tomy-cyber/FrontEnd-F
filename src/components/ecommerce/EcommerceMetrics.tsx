@@ -227,7 +227,7 @@ export const EcommerceMetrics = () => {
         </div>
 
         <div className="mt-4 flex justify-between text-xs text-gray-500">
-          <span>24h change</span>
+          <span>1m change</span>
           <span className="text-emerald-400">+${(parseFloat(usdValue) * 0.1101).toFixed(2)}</span>
         </div>
       </div>
@@ -265,7 +265,7 @@ export const EcommerceMetrics = () => {
         </div>
 
         <div className="mt-4 flex justify-between text-xs text-gray-500">
-          <span>24h change</span>
+          <span>Binance protection</span>
           <span className="text-red-400">-0.00325 BTC</span>
         </div>
       </div>
