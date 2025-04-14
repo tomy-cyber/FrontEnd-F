@@ -20,11 +20,11 @@ export default function BlankPage() {
             <p className="mb-4 text-gray-600 dark:text-gray-300">
               If you have an investment (or you were advised to invest) and the provider or adviser has gone out of
               business, you may be able to claim compensation with FSCS. Whether you already have an investment or are
-              thinking of investing, you should check that it's FSCS protected.
+              thinking of investing, you should check that it&apos;s FSCS protected.
             </p>
             <p className="text-gray-600 dark:text-gray-300">
-              If you've got money to invest, there's never been such a range of investment ideas and products. But our
-              protection varies depending on the type of product, and some investment products aren't protected at all.
+              If you&apos;ve got money to invest, there&apos;s never been such a range of investment ideas and products. But our
+              protection varies depending on the type of product, and some investment products aren&apos;t protected at all.
               To be sure, check what we protect by using our investment protection checker.
             </p>
           </div>
@@ -192,8 +192,8 @@ export default function BlankPage() {
                   Know the risks before you invest
                 </h4>
                 <p className="text-amber-700 dark:text-amber-300">
-                  Beware of investments offering high returns. Only invest if you're prepared, and can afford, to lose
-                  your money. These resources will help to make sure you're prepared before you invest.
+                  Beware of investments offering high returns. Only invest if you&apos;re prepared, and can afford, to lose
+                  your money. These resources will help to make sure you&apos;re prepared before you invest.
                 </p>
               </div>
             </div>
