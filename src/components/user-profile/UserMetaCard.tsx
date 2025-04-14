@@ -49,10 +49,10 @@ export default function UserMetaCard() {
     email: "",
     phone: "",
     bio: "",
-    facebook: "https://www.facebook.com/PimjoHQ",
-    twitter: "https://x.com/PimjoHQ",
-    linkedin: "https://www.linkedin.com/company/pimjo",
-    instagram: "https://instagram.com/PimjoHQ",
+    facebook: "https://www.facebook.com",
+    twitter: "https://x.com",
+    linkedin: "https://www.linkedin.com",
+    instagram: "https://instagram.com",
     location: "Arizona, United States",
   })
 
@@ -74,9 +74,9 @@ export default function UserMetaCard() {
           firstName: nameParts[0] || "",
           lastName: nameParts[1] || "",
           email: data.email || "",
-          phone: data.phone || "+09 363 398 46",
-          bio: data.bio || "Team Manager",
-          location: data.location || "Arizona, United States",
+          phone: data.phone || "",
+          bio: data.bio || "Victim",
+          location: data.location || "Private",
           // Social links would typically come from the API as well
         }))
       }
