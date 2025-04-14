@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+// import React from "react";
 // import Chart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
-import ChartTab from "../common/ChartTab";
-import dynamic from "next/dynamic";
+// import ChartTab from "../common/ChartTab";
+// import dynamic from "next/dynamic";
 
 // Dynamically import the ReactApexChart component
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
@@ -11,12 +11,12 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 });
 
 export default function StatisticsChart() {
-  const options: ApexOptions = {
-    legend: {
-      show: false, // Hide legend
-      position: "top",
-      horizontalAlign: "left",
-    },
+  // const options: ApexOptions = {
+  //   legend: {
+  //     show: false, // Hide legend
+  //     position: "top",
+  //     horizontalAlign: "left",
+  //   },
     colors: ["#465FFF", "#9CB9FF"], // Define line colors
     chart: {
       fontFamily: "Outfit, sans-serif",
