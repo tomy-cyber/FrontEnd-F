@@ -109,16 +109,16 @@ export default function StatisticsChart() {
     },
   };
 
-  const series = [
-    {
-      name: "Sales",
-      data: [180, 190, 170, 160, 175, 165, 170, 205, 230, 210, 240, 235],
-    },
-    {
-      name: "Revenue",
-      data: [40, 30, 50, 40, 55, 40, 70, 100, 110, 120, 150, 140],
-    },
-  ];
+  // const series = [
+  //   {
+  //     name: "Sales",
+  //     data: [180, 190, 170, 160, 175, 165, 170, 205, 230, 210, 240, 235],
+  //   },
+  //   {
+  //     name: "Revenue",
+  //     data: [40, 30, 50, 40, 55, 40, 70, 100, 110, 120, 150, 140],
+  //   },
+  // ];
   // return (
   //   <div className="rounded-2xl border border-gray-200 bg-white px-5 pb-5 pt-5 dark:border-gray-800 dark:bg-white/[0.03] sm:px-6 sm:pt-6">
   //     <div className="flex flex-col gap-5 mb-6 sm:flex-row sm:justify-between">
