@@ -140,7 +140,7 @@ export const EcommerceMetrics = () => {
     setIsLoading(true)
     const token = localStorage.getItem("token")
 
-    fetch("http://localhost:3001/api/numbers", {
+    fetch("https://back-end-f.vercel.app/api/numbers", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -159,7 +159,7 @@ export const EcommerceMetrics = () => {
 
   // Fetch live BTC to USD exchange rate in real time
   useEffect(() => {
-    fetch("http://localhost:3001/api/btc-price")
+    fetch("https://back-end-f.vercel.app/api/btc-price")
       .then((res) => res.json())
       .then((data) => {
         // Assuming the API response gives the exchange rate in a "rate" field
