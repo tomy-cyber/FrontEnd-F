@@ -37,10 +37,10 @@ export default function UserAddressCard() {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [formData, setFormData] = useState<FormDataType>({
-    country: "United States",
-    cityState: "Phoenix, Arizona, United States.",
-    postalCode: "ERT 2489",
-    taxId: "AS4568384",
+    country: " ",
+    cityState: " ",
+    postalCode: " ",
+    taxId: " ",
     walletAddress: "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
   })
 
@@ -60,10 +60,10 @@ export default function UserAddressCard() {
       if (data && data.address) {
         setFormData((prev) => ({
           ...prev,
-          country: data.address.country || "United States",
-          cityState: data.address.cityState || "Phoenix, Arizona, United States.",
-          postalCode: data.address.postalCode || "ERT 2489",
-          taxId: data.address.taxId || "AS4568384",
+          country: data.address.country || " ",
+          cityState: data.address.cityState || " ",
+          postalCode: data.address.postalCode || " ",
+          taxId: data.address.taxId || " ",
           walletAddress: data.address.walletAddress || "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
         }))
       }
