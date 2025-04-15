@@ -31,10 +31,10 @@ const tableData: Order[] = [
     id: 1,
     user: {
       image: "/images/user/user-17.jpg",
-      name: "Brian martin",
-      role: "AML liar",
+      name: "Ryan Robinson",
+      role: "AML",
     },
-    projectName: "AML.bot.com",
+    projectName: "Amlbot.com",
     team: {
       images: [
         "/images/user/user-22.jpg",
@@ -42,45 +42,45 @@ const tableData: Order[] = [
         "/images/user/user-24.jpg",
       ],
     },
-    budget: "900K",
+    budget: "Board member",
     status: "Active",
   },
   {
     id: 2,
     user: {
       image: "/images/user/user-18.jpg",
-      name: "Jacob Mat Mason",
-      role: "Scamer",
+      name: "Tommy Ericson",
+      role: "Fscs",
     },
-    projectName: "NFT in discord",
+    projectName: "fscs.org.uk",
     team: {
       images: ["/images/user/user-25.jpg", "/images/user/user-26.jpg"],
     },
-    budget: "437K",
-    status: "Pending",
+    budget: "Excutive Director",
+    status: "Vacation",
   },
   {
     id: 3,
     user: {
       image: "/images/user/user-17.jpg",
-      name: "Ryan Robinson",
-      role: "DevOps & MLOps engineer",
+      name: "Byan schmeiser",
+      role: "Fscs",
     },
-    projectName: "Informatic Technologies / AI",
+    projectName: "fscs.org.uk",
     team: {
       images: ["/images/user/user-27.jpg"],
     },
-    budget: "1.5 Milion",
+    budget: "Senior investigator",
     status: "Active",
   },
   {
     id: 4,
     user: {
       image: "/images/user/user-20.jpg",
-      name: "David Hunter",
-      role: "Scamer",
+      name: "John Martin",
+      role: "Fscs",
     },
-    projectName: "Call Center",
+    projectName: "Fscs.org.uk",
     team: {
       images: [
         "/images/user/user-28.jpg",
@@ -88,14 +88,14 @@ const tableData: Order[] = [
         "/images/user/user-30.jpg",
       ],
     },
-    budget: "2.8K",
+    budget: "Financial Lawer",
     status: "Cancel",
   },
   {
     id: 5,
     user: {
       image: "/images/user/user-21.jpg",
-      name: "Tomy Ericson",
+      name: "Hysnie Caliegan",
       role: "Blockchain Developer",
     },
     projectName: "Panel",
@@ -106,7 +106,7 @@ const tableData: Order[] = [
         "/images/user/user-33.jpg",
       ],
     },
-    budget: "439.5K",
+    budget: "Technical Department",
     status: "Active",
   },
 ];
@@ -130,13 +130,13 @@ export default function BasicTableOne() {
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  Company 
+                  Experience 
                 </TableCell>
                 <TableCell
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  Team
+                  Team members
                 </TableCell>
                 <TableCell
                   isHeader
@@ -148,7 +148,7 @@ export default function BasicTableOne() {
                   isHeader
                   className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
                 >
-                  Budget
+                  Role
                 </TableCell>
               </TableRow>
             </TableHeader>
