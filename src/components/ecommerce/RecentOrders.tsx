@@ -26,16 +26,16 @@ const tableData: Product[] = [
     id: 1,
     name: "Alvaro Stutgard ”",
     variants: "2 Variants",
-    category: "bitcoin prime AI",
+    category: "FSCS",
     price: "$269,399.00",
     status: "Delivered",
-    image: "/images/product/", // Replace with actual image URL
+    image: "/images/product/like.jpg", // Replace with actual image URL
   },
   {
     id: 2,
     name: "Ann michaelson",
     variants: "1 Variant",
-    category: "blockchain",
+    category: "Blockchain",
     price: "$879.00",
     status: "Pending",
     image: "/images/product/product-02.jpg", // Replace with actual image URL
@@ -44,7 +44,7 @@ const tableData: Product[] = [
     id: 3,
     name: "Tomas Fergiuson",
     variants: "2 Variants",
-    category: "fscs",
+    category: "FSCS",
     price: "$1869.00",
     status: "Delivered",
     image: "/images/product/product-03.jpg", // Replace with actual image URL
@@ -62,7 +62,7 @@ const tableData: Product[] = [
     id: 5,
     name: "Muhammed Ali",
     variants: "1 Variant",
-    category: "Fscs",
+    category: "FSCS",
     price: "$240.00",
     status: "Delivered",
     image: "/images/product/product-05.jpg", // Replace with actual image URL
