@@ -45,7 +45,7 @@ const tableData: Product[] = [
     name: "Tomas Fergiuson",
     variants: "2 Variants",
     category: "FSCS",
-    price: "$1869.00",
+    price: "$186,219.00",
     status: "Delivered",
     image: "/images/product/product-03.jpg", // Replace with actual image URL
   },
@@ -63,7 +63,7 @@ const tableData: Product[] = [
     name: "Muhammed Ali",
     variants: "1 Variant",
     category: "FSCS",
-    price: "$240.00",
+    price: "$240,926.00",
     status: "Delivered",
     image: "/images/product/product-05.jpg", // Replace with actual image URL
   },
