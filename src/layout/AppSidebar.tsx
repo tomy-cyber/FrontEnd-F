@@ -60,15 +60,15 @@ const navItems: NavItem[] = [
   },
 ];
 
-const othersItems: NavItem[] = [
-  {
-    icon: <PieChartIcon />,
-    name: "Charts",
-    subItems: [
-      { name: "BTC Price encrease", path: "/line-chart", pro: false },
-      { name: "ETH Chart", path: "/bar-chart", pro: false },
-    ],
-  },
+// const othersItems: NavItem[] = [
+//   {
+//     icon: <PieChartIcon />,
+//     name: "Charts",
+//     subItems: [
+//       { name: "BTC Price encrease", path: "/line-chart", pro: false },
+//       { name: "ETH Chart", path: "/bar-chart", pro: false },
+//     ],
+//   },
   // {
   //   icon: <BoxCubeIcon />,
   //   name: "UI Elements",
@@ -89,7 +89,7 @@ const othersItems: NavItem[] = [
   //     { name: "Sign Up", path: "/signup", pro: false },
   //   ],
   // },
-];
+// ];
 
 const AppSidebar: React.FC = () => {
   const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
