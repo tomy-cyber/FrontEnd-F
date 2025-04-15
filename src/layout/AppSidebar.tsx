@@ -27,7 +27,7 @@ const navItems: NavItem[] = [
   {
     icon: <GridIcon />,
     name: "Assets",
-    subItems: [{ name: "Recovered Funds", path: "/", pro: false }],
+    subItems: [{ name: "Assets", path: "/", pro: false }],
   },
   {
     icon: <CalenderIcon />,
@@ -43,12 +43,12 @@ const navItems: NavItem[] = [
   {
     name: "Forms",
     icon: <ListIcon />,
-    subItems: [{ name: "Victim Identification", path: "/form-elements", pro: false }],
+    subItems: [{ name: "User Identification", path: "/form-elements", pro: false }],
   },
   {
-    name: "News",
+    name: "About us",
     icon: <TableIcon />,
-    subItems: [{ name: "Top Scamars", path: "/basic-tables", pro: false }],
+    subItems: [{ name: "Founders", path: "/basic-tables", pro: false }],
   },
   {
     name: "Pages",
