@@ -904,22 +904,22 @@ export default function UserDropdown() {
             <DropdownItem
               onItemClick={closeDropdown}
               tag="a"
-              href="/wallet"
+              href="/profile"
               className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-1.5 sm:py-2 font-medium text-gray-700 rounded-lg group text-sm hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
             >
               Wallet
             </DropdownItem>
           </li>
-          <li>
+{/*           <li>
             <DropdownItem
               onItemClick={closeDropdown}
               tag="a"
-              href="/settings"
+              href="/"
               className="flex items-center gap-2 sm:gap-3 px-2 sm:px-3 py-1.5 sm:py-2 font-medium text-gray-700 rounded-lg group text-sm hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
             >
               Settings
             </DropdownItem>
-          </li>
+          </li> */}
         </ul>
         <Link
           href="/signin"
