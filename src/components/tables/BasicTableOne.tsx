@@ -42,7 +42,7 @@ const tableData: Order[] = [
         "/images/user/user-24.jpg",
       ],
     },
-    budget: "Board member",
+    budget: "Board Member",
     status: "Active",
   },
   {
@@ -70,7 +70,7 @@ const tableData: Order[] = [
     team: {
       images: ["/images/user/user-27.jpg"],
     },
-    budget: "Senior investigator",
+    budget: "Senior Investigator",
     status: "Active",
   },
   {
