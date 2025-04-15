@@ -24,7 +24,7 @@ interface Product {
 const tableData: Product[] = [
   {
     id: 1,
-    name: "Alvaro Stutgard ”",
+    name: "Ann michaelson",
     variants: "2 Variants",
     category: "FSCS",
     price: "$269,399.00",
@@ -33,7 +33,7 @@ const tableData: Product[] = [
   },
   {
     id: 2,
-    name: "Ann michaelson",
+    name: "Alvaro Stutgard",
     variants: "1 Variant",
     category: "Blockchain",
     price: "$879.00",
