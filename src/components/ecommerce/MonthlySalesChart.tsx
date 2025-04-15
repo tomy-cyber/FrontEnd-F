@@ -2,9 +2,9 @@
 import { ApexOptions } from "apexcharts";
 import dynamic from "next/dynamic";
 // import { MoreDotIcon } from "@/icons";
-import { DropdownItem } from "../ui/dropdown/DropdownItem";
+// import { DropdownItem } from "../ui/dropdown/DropdownItem";
 // import { useState } from "react";
-import { Dropdown } from "../ui/dropdown/Dropdown";
+// import { Dropdown } from "../ui/dropdown/Dropdown";
 
 // Dynamically import the ReactApexChart component
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
@@ -118,7 +118,7 @@ export default function MonthlySalesChart() {
 {/*           <button onClick={toggleDropdown} className="dropdown-toggle">
             <MoreDotIcon className="text-gray-400 hover:text-gray-700 dark:hover:text-gray-300" />
           </button> */}
-          <Dropdown
+{/*           <Dropdown
             isOpen={isOpen}
             onClose={closeDropdown}
             className="w-40 p-2"
@@ -135,7 +135,7 @@ export default function MonthlySalesChart() {
             >
               Delete
             </DropdownItem>
-          </Dropdown>
+          </Dropdown> */}
         </div>
       </div>
 
