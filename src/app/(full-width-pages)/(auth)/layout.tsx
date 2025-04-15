@@ -16,7 +16,7 @@ export default function AuthLayout({
         {/* Left side - Branding */}
         <div className="lg:w-1/2 w-full bg-[#111827] lg:flex items-center justify-center hidden">
           <div className="relative flex flex-col items-center max-w-md p-8 z-10">
-            <Link href="/" className="block mb-8">
+            <Link href="/signin" className="block mb-8">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-[#4F46E5] rounded-xl flex items-center justify-center shadow-lg">
                   <svg
