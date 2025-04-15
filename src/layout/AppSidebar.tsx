@@ -11,7 +11,7 @@ import {
   HorizontaLDots,
   ListIcon,
   PageIcon,
-  PieChartIcon,
+  // PieChartIcon,
   TableIcon,
   UserCircleIcon,
 } from "../icons/index";
