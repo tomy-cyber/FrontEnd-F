@@ -7,9 +7,10 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Next.js Form Layout | TailAdmin - Next.js Dashboard Template",
+    title: "CryptoVault",
   description:
-    "This is Next.js Form Layout page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+    "This is CryptoVault Basic Table  page for Userse",
+  // other metadata
 };
 
 export default function FormLayout() {
