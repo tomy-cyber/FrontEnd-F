@@ -60,7 +60,7 @@ const navItems: NavItem[] = [
   },
 ];
 
-// const othersItems: NavItem[] = [
+const othersItems: NavItem[] = [
 //   {
 //     icon: <PieChartIcon />,
 //     name: "Charts",
@@ -89,7 +89,8 @@ const navItems: NavItem[] = [
   //     { name: "Sign Up", path: "/signup", pro: false },
   //   ],
   // },
-// ];
+  return null;
+];
 
 const AppSidebar: React.FC = () => {
   const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
