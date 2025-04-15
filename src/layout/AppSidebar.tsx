@@ -51,10 +51,10 @@ const navItems: NavItem[] = [
     subItems: [{ name: "Founders", path: "/basic-tables", pro: false }],
   },
   {
-    name: "Pages",
+    name: "What we cover",
     icon: <PageIcon />,
     subItems: [
-      { name: "Blank Page", path: "/blank", pro: false },
+      { name: "Investments", path: "/blank", pro: false },
       // { name: "404 Error", path: "/error-404", pro: false },
     ],
   },
