@@ -2,9 +2,9 @@ import SignInForm from "@/components/auth/SignInForm";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "CryptoVault",
+    title: "PilotTrace",
   description:
-    "This is CryptoVault Basic Table  page for Userse",
+    "This is PilotTrace Basic Table  page for Users",
   // other metadata
 };
 
