@@ -32,7 +32,7 @@ export default function AuthLayout({
                     <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L12.26 4.145" />
                   </svg>
                 </div>
-                <span className="text-2xl font-bold text-white">CryptoVault</span>
+                <span className="text-2xl font-bold text-white">PilotTrace</span>
               </div>
             </Link>
 
