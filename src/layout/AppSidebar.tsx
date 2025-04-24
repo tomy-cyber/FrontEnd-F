@@ -48,7 +48,7 @@ const navItems: NavItem[] = [
   {
     name: "About us",
     icon: <TableIcon />,
-    subItems: [{ name: "Founders", path: "/basic-tables", pro: false }],
+    subItems: [{ name: "Contact US", path: "/basic-tables", pro: false }],
   },
   {
     name: "What we cover",
