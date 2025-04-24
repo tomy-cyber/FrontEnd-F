@@ -5,9 +5,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "CryptoVault",
+  title: "Pilottrace",
   description:
-    "This is CryptoVault Basic Table  page for Userse",
+    "This is Pilottrace Basic Table  page for Userse",
   // other metadata
 };
 
@@ -16,7 +16,7 @@ export default function BasicTables() {
     <div>
       <PageBreadcrumb pageTitle="Founders" />
       <div className="space-y-6">
-        <ComponentCard title="Role">
+        <ComponentCard title=" ">
           <BasicTableOne />
         </ComponentCard>
       </div>
