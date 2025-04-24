@@ -224,62 +224,75 @@
 //     </div>
 //   );
 // }
-import React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
-
 export default function ContactUs() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <div className="bg-gray-900 p-10 rounded-2xl shadow-lg border border-gray-800">
-        <h1 className="text-4xl font-bold text-white mb-4">Contact Us</h1>
-        <p className="text-gray-400 text-lg mb-8">
-          Have questions about our crypto compliance solutions? We're here to help.
-        </p>
+    <div className="overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-white/[0.05] dark:bg-white/[0.03] p-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-10">
+          <h1 className="text-3xl font-bold text-gray-800 dark:text-white/90 mb-4">Contact Us</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300">
+            Have questions about our crypto compliance solutions? We're here to help.
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-10 text-gray-300">
-          {/* Email Section */}
-          <div>
-            <h2 className="text-xl font-semibold text-white flex items-center gap-2 mb-3">
-              <Mail className="w-5 h-5" /> Email Us
-            </h2>
-            <p>
-              <span className="text-gray-400">For general inquiries:</span><br />
-              <a href="mailto:info@pilottrace.com" className="text-blue-500 hover:underline">
-                info@pilottrace.com
-              </a>
-            </p>
-            <p className="mt-4">
-              <span className="text-gray-400">For support:</span><br />
-              <a href="mailto:support@pilottrace.com" className="text-blue-500 hover:underline">
-                support@pilottrace.com
-              </a>
-            </p>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
+            <div>
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-white/90 mb-4">Email Us</h2>
+
+              <div className="mb-4">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">For general inquiries:</p>
+                <a
+                  href="mailto:info@pilottrace.com"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                >
+                  info@pilottrace.com
+                </a>
+              </div>
+
+              <div>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">For support:</p>
+                <a
+                  href="mailto:support@pilottrace.com"
+                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                >
+                  support@pilottrace.com
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* Call Section */}
-          <div>
-            <h2 className="text-xl font-semibold text-white flex items-center gap-2 mb-3">
-              <Phone className="w-5 h-5" /> Call Us
-            </h2>
-            <p>
-              <span className="text-gray-400">International:</span><br />
-              +44 20 3961 5502
-            </p>
-          </div>
+          <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
+            <div>
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-white/90 mb-4">Call Us</h2>
 
-          {/* Visit Section */}
-          <div className="md:col-span-2">
-            <h2 className="text-xl font-semibold text-white flex items-center gap-2 mb-3">
-              <MapPin className="w-5 h-5" /> Visit Us
-            </h2>
-            <p>
-              10th Floor, Beaufort House, 15 St Botolph St<br />
-              City of London, London EC3A 7QU<br />
-              United Kingdom
-            </p>
+              <div>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">International:</p>
+                <a href="tel:+442039615502" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                  +44 20 3961 5502
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
+          <div>
+            <h2 className="text-xl font-semibold text-gray-800 dark:text-white/90 mb-4">Visit Us</h2>
+
+            <div>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Office:</p>
+              <address className="not-italic text-gray-700 dark:text-gray-300 leading-relaxed">
+                10th Floor, Beaufort House, 15 St Botolph St
+                <br />
+                City of London, London EC3A 7QU
+                <br />
+                United Kingdom
+              </address>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
