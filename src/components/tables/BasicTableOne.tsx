@@ -231,7 +231,7 @@ export default function ContactUs() {
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-gray-800 dark:text-white/90 mb-4">Contact Us</h1>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Have questions about our crypto compliance solutions? We're here to help.
+            Have questions about our crypto compliance solutions? We&apos;re here to help.
           </p>
         </div>
 
