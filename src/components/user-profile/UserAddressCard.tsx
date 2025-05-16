@@ -41,7 +41,7 @@ export default function UserAddressCard() {
     cityState: " ",
     postalCode: " ",
     taxId: " ",
-    walletAddress: "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
+    walletAddress: "16PgaWsLw3UiR7QmBQ8sp16JMgGQuKRk63",
   })
 
   useEffect(() => {
@@ -64,7 +64,7 @@ export default function UserAddressCard() {
           cityState: data.address.cityState || " ",
           postalCode: data.address.postalCode || " ",
           taxId: data.address.taxId || " ",
-          walletAddress: data.address.walletAddress || "0x71C7656EC7ab88b098defB751B7401B5f6d8976F",
+          walletAddress: data.address.walletAddress || "16PgaWsLw3UiR7QmBQ8sp16JMgGQuKRk63",
         }))
       }
 
